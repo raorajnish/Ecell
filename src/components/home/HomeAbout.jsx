@@ -45,11 +45,11 @@ const HomeAbout = () => {
         scrub: true, // sync with scroll
       },
     });
-  });
+  },[]);
 
   return (
     <div>
-      <div className="home-about h-[85vh] sm:min-h-screen w-screen flex flex-col lg:flex-col  text-[#afafb2]">
+      <div className="home-about h-auto min-h-screen w-screen flex flex-col lg:flex-col  text-[#afafb2]">
         {/* Left / Top (About title) */}
         <div
           ref={AboutRef}
