@@ -25,26 +25,21 @@ const HomeAbout = () => {
       },
     });
 
-    // Split the content text into lines & chars
-    const split = new SplitText(AboutContentRef.current, {
-      type: "lines,words,chars",
-    });
-
-    // Animate characters glowing in
-    gsap.from(split.chars, {
+    gsap.from(AboutContentRef.current, {
+      x: 200,
       opacity: 0,
-      color: "#444", // start dim
-      textShadow: "5px 5px 5px #7638e8", // glow effect
-      duration: 0.7,
-      ease: "power2.out",
-      stagger: 0.03, // delay per character
+      duration: 1.2,
+      ease: "power3.out",
       scrollTrigger: {
-        trigger: AboutContentRef.current,
-        start: "top 70%",
-        end: "bottom 100%",
-        scrub: true, // sync with scroll
+        trigger: AboutRef.current,
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+        markers:true
       },
     });
+    
+
+    
   });
 
   return (
