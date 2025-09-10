@@ -54,7 +54,9 @@
   .cursor-target-icon{
   display: none;
 }
-
+.spline-bg{
+  display: none;
+}
   .nav {
     position: fixed;
     top: 0;
