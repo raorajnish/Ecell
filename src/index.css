@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../public/fonts/bb3ef058b751a6ad-s.p.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/fonts/103fc5fac08dcb15-s.p.woff2);
+}
+@font-face {
+  font-family: glideon;
+  src: url(../public/fonts/Gildeon.otf);
+}
+@font-face {
+  font-family: cherif;
+  src: url(../public/fonts/cherif.otf);
+}
+@font-face {
+  font-family: autobahn;
+  src: url(../public/fonts/Autobahn.ttf);
+}
+@font-face {
+  font-family: vampire;
+  src: url(../public/fonts/EvilVampire-Regular.ttf);
+}
+
+.nav {
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-image: linear-gradient(
+    90deg,
+    rgba(125, 69, 228, 0.3) 40%,
+    rgba(73, 44, 201, 0.3) 100%
+  );
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.menu-open-btn{
+    display: none;
+}
+.menu-close-btn{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: min(65vw, 100%);
+    z-index: 100;
+    border-left: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+
+    align-items: center;
+    gap: 1vh;
+    padding: 2vh 5vw 30vh;
+    transition: right 300ms ease-out;
+  }
+  .nav-links{
+    flex-direction: column;
+    font-size: 4vw;
+  }
+  .nav.show{
+    right: 0;
+  }
+  
+  .menu-open-btn{
+    display: block;
+}
+.menu-close-btn{
+  padding-left: 300px;
+    display: block;
+}
+}
+
+.sponsors-btn {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(125, 69, 228, 1) 10%,
+    rgba(73, 44, 201, 1) 100%
+  );
+}
+
+/* Targets any scrollable element, e.g., body */
+body {
+  background: #000;
+}
+.char {
+  display: inline-block;
+  white-space: pre;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+p,
+.about-text {
+  white-space: normal; /* allows natural wrapping */
+  word-break: normal; /* breaks only at spaces */
+  overflow-wrap: break-word; /* breaks long words only if necessary */
+  text-align: justify; /* optional, makes both edges align neatly */
+}
+
+.active-page {
+  position: relative;
+  border-radius: 5px;
+  /* Gradient background for the active page */
+
+  color: white; /* Ensure text is visible on gradient */
+}
+
+/* Bottom border using a pseudo-element */
+.active-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: white;
+  /* transform: scaleX(1); */
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
