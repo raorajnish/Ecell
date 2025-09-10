@@ -49,7 +49,7 @@ const HomeAbout = () => {
 
   return (
     <div>
-      <div className="home-about h-auto min-h-screen w-screen flex flex-col lg:flex-col  text-[#afafb2]">
+      <div className="home-about h-[85vh] sm:min-h-screen w-screen flex flex-col lg:flex-col  text-[#afafb2]">
         {/* Left / Top (About title) */}
         <div
           ref={AboutRef}
@@ -62,7 +62,7 @@ const HomeAbout = () => {
         {/* Right / Bottom (Content) */}
         <div
           ref={AboutContentRef}
-          className=" w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw]  lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[15vw] text-sm sm:text-lg md:text-xl  font-[font1] text-left lg:text-left"
+          className="about-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw]  lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[15vw] text-sm sm:text-lg md:text-xl  font-[font1] text-left lg:text-left"
         >
           Every great journey begins with an idea, and at SAKEC E-CELL, ideas
           have been our driving force since 2017. <br /> <br />

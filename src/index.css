@@ -17,10 +17,6 @@ html {
   src: url(./assets/fonts/103fc5fac08dcb15-s.p.woff2);
 }
 @font-face {
-  font-family: glideon;
-  src: url(./assets/fonts/Gildeon.otf);
-}
-@font-face {
   font-family: cherif;
   src: url(./assets/fonts/cherif.otf);
 }
@@ -148,6 +144,13 @@ p,
   transform-origin: left;
   transition: transform 0.4s ease;
   pointer-events: none;
+}
+
+p, .about-text {
+  white-space: normal;       /* allows natural wrapping */
+  word-break: normal;        /* breaks only at spaces */
+  overflow-wrap: break-word; /* breaks long words only if necessary */
+  text-align: justify;       /* optional, makes both edges align neatly */
 }
 
 
