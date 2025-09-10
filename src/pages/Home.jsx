@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="relative overflow-hidden  min-h-screen ">
       {/* Background Spline */}
-      <div className=" absolute  h-full ">
+      <div className=" absolute spline-bg h-full ">
         <SplineScene />
       </div>
 

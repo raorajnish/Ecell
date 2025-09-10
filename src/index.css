@@ -51,6 +51,12 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .cursor-target-icon{
+  display: none;
+}
+.spline-bg{
+  display: none;
+}
   .nav {
     position: fixed;
     top: 0;
@@ -109,7 +115,7 @@ p,
   white-space: normal; /* allows natural wrapping */
   word-break: normal; /* breaks only at spaces */
   overflow-wrap: break-word; /* breaks long words only if necessary */
-  text-align: justify; /* optional, makes both edges align neatly */
+  /* text-align: justify; */
 }
 
 .active-page {
@@ -134,4 +140,5 @@ p,
   transition: transform 0.4s ease;
   pointer-events: none;
 }
+
 

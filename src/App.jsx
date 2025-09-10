@@ -18,7 +18,9 @@ const App = () => {
         <div className="fixed top-8 left-[0.5vw] w-[99vw] z-50 pointer-events-auto">
           <NavBar />
         </div>
-        <TargetCursor spinDuration={2} hideDefaultCursor={true} />
+        <div className="cursor-target-icon">
+          <TargetCursor spinDuration={2} hideDefaultCursor={true} />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
