@@ -19,13 +19,13 @@ const Home = () => {
       <div className=" absolute spline-bg h-full ">
         <SplineScene />
       </div>
-      <div className="phone-bg absolute opacity-40 h-[100vh] top-0 w-[100vw] -z-1">
-        <img className="h-full w-full object-cover" src="phone-bg.png" alt="" />
+      <div className="phone-bg absolute opacity-40 h-[100vh]   w-[100vw] -z-1">
+        <img className=" h-full w-full   " src="phone-bg.png" alt="" />
       </div>
 
       <div>
         {/* Hero content on top */}
-        <div className="hero font-[font1] pointer-events-none relative text-[#afafb2] flex flex-col w-screen h-screen justify-center items-center px-4">
+        <div className="-mt-20 sm:mt-0 hero font-[font1] pointer-events-none relative text-[#afafb2] flex flex-col w-screen h-screen justify-center items-center px-4">
           {/* Static word + Rotating badge */}
           <div className="flex items-center gap-1 font-extrabold text-center">
             <span className="text-gray-200 text-[4vw] sm:text-[3vh]">
@@ -96,7 +96,7 @@ const Home = () => {
           </div>
 
           {/* Scroll down hint */}
-          <div className="absolute bottom-5 right-4 bg-gray-950 text-gray-200 py-2 px-5 rounded-[5px]">
+          <div className=" -mt-24 sm:mt-0 absolute bottom-5 right-4 bg-gray-950 text-gray-200 py-2 px-5 rounded-[5px]">
             <h3 className="flex   gap-2">
               <ArrowDown /> Scroll Down
             </h3>

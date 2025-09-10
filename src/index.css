@@ -35,14 +35,14 @@ html {
 
 .nav {
   /* background-color: rgba(255, 255, 255, 0.3); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   background-image: linear-gradient(
     90deg,
     rgba(125, 69, 228, 0.3) 40%,
     rgba(73, 44, 201, 0.3) 100%
   );
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.9);
 }
 
 
