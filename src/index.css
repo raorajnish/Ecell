@@ -7,27 +7,27 @@
 
 @font-face {
   font-family: font1;
-  src: url(../public/fonts/bb3ef058b751a6ad-s.p.woff2);
+  src: url(./assets/fonts/bb3ef058b751a6ad-s.p.woff2);
 }
 @font-face {
   font-family: font2;
-  src: url(../public/fonts/103fc5fac08dcb15-s.p.woff2);
+  src: url(./assets/fonts/103fc5fac08dcb15-s.p.woff2);
 }
 @font-face {
   font-family: glideon;
-  src: url(../public/fonts/Gildeon.otf);
+  src: url(./assets/fonts/Gildeon.otf);
 }
 @font-face {
   font-family: cherif;
-  src: url(../public/fonts/cherif.otf);
+  src: url(./assets/fonts/cherif.otf);
 }
 @font-face {
   font-family: autobahn;
-  src: url(../public/fonts/Autobahn.ttf);
+  src: url(./assets/fonts/Autobahn.ttf);
 }
 @font-face {
   font-family: vampire;
-  src: url(../public/fonts/EvilVampire-Regular.ttf);
+  src: url(./assets/fonts/EvilVampire-Regular.ttf);
 }
 
 .nav {
