@@ -4,9 +4,10 @@ import RotatingText from "@/components/RotatingText";
 import { CornerAccentButton } from "@/components/ui/shadcn-io/corner-accent-button";
 import { Link } from "react-router-dom";
 import HomeAbout from "@/components/home/HomeAbout";
-
 import { ArrowDown } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
+import MagicBento from "@/components/home/MagicBento";
+
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
                 "innovation",
                 "growth",
               ]}
-              mainClassName="px-2 sm:px-3 bg-[#6C4CFF] text-white text-[4vw] sm:text-[3vh] overflow-hidden py-1 rounded-lg"
+              mainClassName="px-2 cursor-target sm:px-3 bg-[#6C4CFF] text-white text-[4vw] sm:text-[3vh] overflow-hidden py-1 rounded-lg"
               staggerFrom="last"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -51,12 +52,13 @@ const Home = () => {
           </h2>
 
           {/* Main Heading */}
-          <h1 className="text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[9vw] text-white font-[vampire] tracking-wider mt-1 mb-5 uppercase font-bold text-center leading-tight">
+
+          <h1 className=" text-[10vw] sm:text-[8vw] md:text-[8vw] lg:text-[9vw] text-white font-[vampire] tracking-wider mt-1 mb-5 uppercase font-bold text-center leading-tight">
             Project Pillar 2025
           </h1>
 
           {/* Description */}
-          <h3 className="text-sm sm:text-base md:text-lg text-center -mt-5 max-w-[90%] sm:max-w-[80%] md:max-w-[70%]">
+          <h3 className="text-[12px] sm:text-base md:text-lg text-center -mt-5 max-w-[90%] sm:max-w-[80%] md:max-w-[70%]">
             A curated platform for startups to gain funding, mentorship, and
             visibility.
             <br className="hidden sm:block" />2 days. Top founders. Live
@@ -73,7 +75,7 @@ const Home = () => {
           {/* Button */}
           <div className="w-full pointer-events-auto p-4 flex justify-center">
             <Link to="/events">
-              <CornerAccentButton className="cursor-pointer text-sm sm:text-base md:text-lg" />
+              <CornerAccentButton className="cursor-pointer cursor-target text-sm sm:text-base md:text-lg" />
             </Link>
           </div>
 
@@ -89,10 +91,27 @@ const Home = () => {
 
           {/* Scroll down hint */}
           <div className="absolute bottom-5 right-4 bg-gray-950 text-gray-200 py-2 px-5 rounded-[5px]">
-            <h3 className="flex gap-2">
+            <h3 className="flex   gap-2">
               <ArrowDown /> Scroll Down
             </h3>
           </div>
+        </div>
+        <div className="h-fit  pt-20 w-full flex justify-center flex-col items-center  ">
+          <h2 className="font-[vampire] text-white mb-6 text-6xl  ">
+            Project Pillar
+          </h2 >
+          <MagicBento
+            textAutoHide={true}
+            enableStars={true}
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={false} // Tilt enabled only for cards
+            enableMagnetism={false} // Magnetism enabled only for cards
+            clickEffect={true}
+            spotlightRadius={300}
+            particleCount={12}
+            glowColor="132, 0, 255"
+          />
         </div>
 
         {/* about us section */}

@@ -41,10 +41,12 @@ const NavBar = () => {
     <nav className="h-[8vh] px-9 justify-between text-white flex items-center">
       <div className="flex items-center">
         <img className="h-11" src="ecell-logo.png" alt="ecell-logo" />
-        <h2 className="font-[vampire] hidden sm:block font-bold text-[2vw] ">Ecell Sakec</h2>
+        <h2 className="font-[vampire] hidden sm:block font-bold text-[2vw] ">
+          Ecell Sakec
+        </h2>
       </div>
 
-      <div className="flex items-center gap-[2vw] ">
+      <div className="flex items-center  gap-[2vw] ">
         <div
           className={`nav${
             isSidebarOpen ? " show" : ""
@@ -57,7 +59,7 @@ const NavBar = () => {
             <X />
           </div>
 
-          <div className="nav-links  flex  lg:gap-10">
+          <div className="nav-links   flex  lg:gap-10">
             <NavLink
               to="/"
               onClick={handleLinkClick}
@@ -102,7 +104,7 @@ const NavBar = () => {
         </div>
 
         <div className="absolute bottom-[-86vh] right-2 md:static">
-          <div className=" static sponsors-btn flex items-center font-bold h-[8vh] bg-blue-500 px-10 py-4 rounded-full">
+          <div className=" cursor-target static sponsors-btn flex items-center font-bold h-[8vh] bg-blue-500 px-10 py-4 rounded-full">
             Sponsors
             <div className="flex bg-black px-5 pr-8 py-2 ml-3 -mr-8 rounded-full flex-row items-center justify-center w-full">
               <AnimatedTooltip items={people} />

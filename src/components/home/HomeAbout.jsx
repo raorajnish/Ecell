@@ -53,7 +53,7 @@ const HomeAbout = () => {
         {/* Left / Top (About title) */}
         <div
           ref={AboutRef}
-          className="home-about-1 w-full lg:w-2/3 font-[vampire] flex justify-center lg:justify-start items-center text-3xl sm:text-6xl md:text-6xl lg:text-7xl text-white pt-[10vh]  lg:pt-[10vh] px-4 lg:pl-20 text-center lg:text-left"
+          className=" home-about-1 w-full lg:w-2/3 font-[vampire] flex justify-center lg:justify-start items-center text-3xl sm:text-6xl md:text-6xl lg:text-7xl text-white pt-[10vh]  lg:pt-[10vh] px-4 lg:pl-48 text-center lg:text-left"
         >
           About <br />
           Ecell Sakec
@@ -62,7 +62,7 @@ const HomeAbout = () => {
         {/* Right / Bottom (Content) */}
         <div
           ref={AboutContentRef}
-          className="aboot-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-5 lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[8vw] text-base sm:text-lg md:text-xl font-[font1] text-center lg:text-left"
+          className="aboot-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-5 lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[8vw] text-sm sm:text-lg md:text-xl  font-[font1] text-center lg:text-left"
         >
           Every great journey begins with an idea, and at SAKEC E-CELL, ideas
           have been our driving force since 2017. <br />
