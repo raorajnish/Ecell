@@ -34,7 +34,6 @@ const HomeAbout = () => {
         trigger: AboutRef.current,
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true
       },
     });
     
