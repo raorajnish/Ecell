@@ -20,26 +20,32 @@ const HomeAbout = () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: AboutRef.current,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    gsap.from(AboutContentRef.current, {
-      x: 200,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: AboutRef.current,
         start: "top 60%",
         toggleActions: "play none none reverse",
       },
-    });
-    
+    });})
 
-    
-  });
+  //   // Split the content text into lines & chars
+  //   const split = new SplitText(AboutContentRef.current, {
+  //     type: "lines,words,chars",
+  //   });
+
+  //   // Animate characters glowing in
+  //   gsap.from(split.chars, {
+  //     opacity: 0,
+  //     color: "#444", // start dim
+  //     textShadow: "5px 5px 5px #7638e8", // glow effect
+  //     duration: 0.7,
+  //     ease: "power2.out",
+  //     stagger: 0.03, // delay per character
+  //     scrollTrigger: {
+  //       trigger: AboutContentRef.current,
+  //       start: "top 70%",
+  //       end: "bottom 100%",
+  //       scrub: true, // sync with scroll
+  //     },
+  //   });
+  // });
 
   return (
     <div>
@@ -56,10 +62,10 @@ const HomeAbout = () => {
         {/* Right / Bottom (Content) */}
         <div
           ref={AboutContentRef}
-          className="aboot-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-5 lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[8vw] text-sm sm:text-lg md:text-xl  font-[font1] text-center lg:text-left"
+          className=" w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw] lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[8vw] text-sm sm:text-lg md:text-xl  font-[font1] text-left lg:text-left"
         >
           Every great journey begins with an idea, and at SAKEC E-CELL, ideas
-          have been our driving force since 2017. <br />
+          have been our driving force since 2017. <br /> <br />
            At SAKEC E-CELL, we have always believed in creating
           experiences that go beyond classrooms — from leadership talks with
           inspiring personalities to innovation-driven events like Meet the

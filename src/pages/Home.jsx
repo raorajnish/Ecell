@@ -10,11 +10,17 @@ import MagicBento from "@/components/home/MagicBento";
 
 
 const Home = () => {
+
+  
+
   return (
     <div className="relative overflow-hidden  min-h-screen ">
       {/* Background Spline */}
       <div className=" absolute spline-bg h-full ">
         <SplineScene />
+      </div>
+      <div className="phone-bg absolute opacity-40 h-[100vh] top-0 w-[100vw] -z-1">
+        <img className="h-full w-full object-cover" src="phone-bg.png" alt="" />
       </div>
 
       <div>
@@ -99,7 +105,7 @@ const Home = () => {
         <div className="h-fit  pt-20 w-full flex justify-center flex-col items-center  ">
           <h2 className="font-[vampire] text-white mb-6 text-6xl  ">
             Project Pillar
-          </h2 >
+          </h2>
           <MagicBento
             textAutoHide={true}
             enableStars={true}

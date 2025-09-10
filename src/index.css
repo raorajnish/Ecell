@@ -4,6 +4,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: font1;
@@ -49,8 +52,14 @@
 .menu-close-btn{
     display: none;
 }
-
+.phone-bg{
+  display: none;
+}
 @media screen and (max-width: 1100px) {
+  .phone-bg{
+  display: block;
+  object-fit: cover;
+}
   .cursor-target-icon{
   display: none;
 }
@@ -114,8 +123,8 @@ p,
 .about-text {
   white-space: normal; /* allows natural wrapping */
   word-break: normal; /* breaks only at spaces */
-  overflow-wrap: break-word; /* breaks long words only if necessary */
-  /* text-align: justify; */
+ 
+  /* text-align: left; */
 }
 
 .active-page {
