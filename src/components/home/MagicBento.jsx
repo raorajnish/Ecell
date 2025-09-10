@@ -1,7 +1,7 @@
 
 import { useRef, useEffect, useState } from "react"
 import { gsap } from "gsap"
-import Card from "./Card"
+import Card from "./card"
 import "./MagicBento.css"
 
 const DEFAULT_PARTICLE_COUNT = 12
