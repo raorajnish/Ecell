@@ -20,7 +20,7 @@ const HomeAbout = () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: AboutRef.current,
-        start: "top 60%",
+        start: "top 80%",
         toggleActions: "play none none reverse",
       },
     });
