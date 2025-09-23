@@ -26,26 +26,26 @@ const HomeAbout = () => {
     });
 
 
-    const split = new SplitText(AboutContentRef.current, {
-      type: "lines,words,chars",
-    });
+    // const split = new SplitText(AboutContentRef.current, {
+    //   type: "lines,words,chars",
+    // });
 
-    // Animate characters glowing in
-    gsap.from(split.chars, {
-      opacity: 0,
-      color: "#444", // start dim
-      textShadow: "5px 5px 5px #7638e8", // glow effect
-      duration: 0.7,
-      ease: "power2.out",
-      stagger: 0.03, // delay per character
-      scrollTrigger: {
-        trigger: AboutContentRef.current,
-        start: "top 70%",
-        end: "bottom 100%",
-        scrub: true, // sync with scroll
-      },
-    });
-  },[]);
+    // // Animate characters glowing in
+    // gsap.from(split.chars, {
+    //   opacity: 0,
+    //   color: "#444", // start dim
+    //   textShadow: "5px 5px 5px #7638e8", // glow effect
+    //   duration: 0.7,
+    //   ease: "power2.out",
+    //   stagger: 0.03, // delay per character
+    //   scrollTrigger: {
+    //     trigger: AboutContentRef.current,
+    //     start: "top 70%",
+    //     end: "bottom 100%",
+    //     scrub: true, // sync with scroll
+    //   },
+    // });
+  });
 
   return (
     <div>

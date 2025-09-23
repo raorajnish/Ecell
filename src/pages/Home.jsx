@@ -7,6 +7,12 @@ import HomeAbout from "@/components/home/HomeAbout";
 import { ArrowDown } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import MagicBento from "@/components/home/MagicBento";
+import StickySection from "@/components/ecell/StickySection";
+import Header from "@/components/ecell/Header";
+import NewsletterCards from "@/components/ecell/NewsletterCards";
+import Reviews from "@/components/ecell/Reviews";
+import Footer from "@/components/ecell/Footer";
+
 
 
 const Home = () => {
@@ -122,6 +128,13 @@ const Home = () => {
 
         {/* about us section */}
         <HomeAbout />
+        {/* New Components in specified order */}
+        <StickySection />
+        {/* <Header /> */}
+        {/* <NewsletterCards /> */}
+        {/* <Reviews /> */}
+        {/* <Footer /> */}
+
       </div>
     </div>
   );
