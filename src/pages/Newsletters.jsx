@@ -1,10 +1,17 @@
+import Footer from '@/components/home/Main-footer';
+import TeamSection from '@/components/newsletters/TeamSection';
 import React from 'react'
 
 const Newsletters = () => {
-  return (
-    <div className="bg-black h-screen w-screen flex justify-center items-center text-9xl text-white font-[vampire]">
-      Newsletters
+  return (<>
+   <div className="lg:px-40 py-40">
+      <TeamSection/>
     </div>
+    <div>
+      <Footer/>
+    </div>
+  </>
+   
   );
 }
 

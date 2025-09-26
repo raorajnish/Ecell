@@ -290,7 +290,7 @@ const Card = ({
       </div>
       <div className="card__content font-[font1] ">
         <h2 className="card__title">{card.title}</h2>
-        <p className="card__description">{card.description}</p>
+        <p className="card__description  ">{card.description}</p>
       </div>
     </>
   );

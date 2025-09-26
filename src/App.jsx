@@ -9,7 +9,6 @@ import Newsletters from "./pages/Newsletters";
 import NavBar from "./components/nav/NavBar";
 
 import { ReactLenis } from "lenis/react";
-import TargetCursor from "./components/TargetCursor";
 
 const App = () => {
   return (
@@ -18,9 +17,7 @@ const App = () => {
         <div className="fixed top-8 left-[0.5vw] w-[99vw] z-50 pointer-events-auto">
           <NavBar />
         </div>
-        <div className="cursor-target-icon">
-          <TargetCursor spinDuration={2} hideDefaultCursor={true} />
-        </div>
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

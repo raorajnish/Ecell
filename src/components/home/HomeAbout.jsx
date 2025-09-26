@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import React, { useRef, useEffect } from "react";
+import AnimatedCopy from "../AnimatedCopy";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -20,7 +21,7 @@ const HomeAbout = () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: AboutRef.current,
-        start: "top 60%",
+        start: "top 80%",
         toggleActions: "play none none reverse",
       },
     });
@@ -49,7 +50,7 @@ const HomeAbout = () => {
 
   return (
     <div>
-      <div className="home-about h-auto min-h-screen w-screen flex flex-col lg:flex-col  text-[#afafb2]">
+      <div className="home-about h-auto  w-screen flex flex-col lg:flex-col  text-[#afafb2]">
         {/* Left / Top (About title) */}
         <div
           ref={AboutRef}
@@ -60,23 +61,17 @@ const HomeAbout = () => {
         </div>
 
         {/* Right / Bottom (Content) */}
+        <AnimatedCopy>
         <div
           ref={AboutContentRef}
-          className="about-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw]  lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[15vw] text-sm sm:text-lg md:text-xl  font-[font1] text-left lg:text-left"
+          className="about-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw]  lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[15vw] text-l sm:text-lg md:text-xl  font-[font1] text-center lg:text-center"
         >
-          Every great journey begins with an idea, and at SAKEC E-CELL, ideas
-          have been our driving force since 2017. <br /> <br />
-           At SAKEC E-CELL, we have always believed in creating
-          experiences that go beyond classrooms — from leadership talks with
-          inspiring personalities to innovation-driven events like Meet the
-          Entrepreneur, Meet the Innovator, Design Thinking Workshops,
-           Food Fiesta , Project Pillar, and many more. Our journey
-          has been one of growth and impact — we went from conducting Hunar back
-          in 2017, to launching Project Pillar in 2022, and now in 2025 hosting
-          our biggest Food Fiesta ever. And this is just the beginning. With
-          every step, we’re setting the stage for something bigger, bolder, and
-          better, because the best of SAKEC E-CELL is yet to come.
+          
+            
+          
+          Every great journey begins with an idea and at SAKEC ECELL, ideas have been our driving force since 2017. From leadership talks and innovation-driven events like Meet the Entrepreneur, Meet the Innovator, Design Thinking Workshops, Food Fiesta, and Project Pillar, we’ve grown with every step. Starting with Hunar in 2017, launching Project Pillar in 2022, and now hosting our biggest Food Fiesta in 2025, our journey has been one of impact and growth. And this is just the beginning, the best of SAKEC E-CELL is yet to come.
         </div>
+        </AnimatedCopy>
       </div>
     </div>
   );

@@ -8,19 +8,22 @@ import { ArrowDown } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import MagicBento from "@/components/home/MagicBento";
 import StickySection from "@/components/ecell/StickySection";
-import Header from "@/components/ecell/Header";
-import NewsletterCards from "@/components/ecell/NewsletterCards";
-import Reviews from "@/components/ecell/Reviews";
-import Footer from "@/components/ecell/Footer";
+import TargetCursor from "@/components/TargetCursor";
+import Newsletter from "@/components/home/email/Newsletter";
+import { Gallery4 } from "@/components/gallery4";
+import Footer from "@/components/home/main-footer";
 
 
 
 const Home = () => {
 
-  
 
   return (
     <div className="relative overflow-hidden  min-h-screen ">
+
+      <div className="cursor-target-icon">
+          <TargetCursor spinDuration={2} hideDefaultCursor={true} />
+        </div>
       {/* Background Spline */}
       <div className=" absolute spline-bg h-full ">
         <SplineScene />
@@ -130,11 +133,9 @@ const Home = () => {
         <HomeAbout />
         {/* New Components in specified order */}
         <StickySection />
-        {/* <Header /> */}
-        {/* <NewsletterCards /> */}
-        {/* <Reviews /> */}
-        {/* <Footer /> */}
-
+        <Gallery4/>
+        <Newsletter />
+        <Footer/>
       </div>
     </div>
   );

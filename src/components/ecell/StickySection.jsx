@@ -14,49 +14,52 @@ const StickySection = () => {
 
   // Card data
   const cardData = [
-    {
-      id: 1,
-      image: "/assets/animal1.jpg",
-      title: "Card title",
-      description:
-        "Every great journey begins with an idea, and at SAKEC E-CELL, ideas have been our driving force since 2017.At SAKEC E-CELL, we have always believed in creating experiences that go beyond classrooms from leadership talks with inspiring personalities to innovation-driven events.",
-    },
-    {
-      id: 2,
-      image: "/assets/animal4.jpg",
-      title: "Card title",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, quo! Omnis placeat voluptate iusto? Ullam quis at perspiciatis officia eaque.",
-    },
-    {
-      id: 3,
-      image: "/assets/animal2.jpg",
-      title: "Card title",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, quo! Omnis placeat voluptate iusto? Ullam quis at perspiciatis officia eaque.",
-    },
-    {
-      id: 4,
-      image: "/assets/animal1.jpg",
-      title: "Card title",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, quo! Omnis placeat voluptate iusto? Ullam quis at perspiciatis officia eaque.",
-    },
-    {
-      id: 5,
-      image: "/assets/animal3.jpg",
-      title: "Card title",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, quo! Omnis placeat voluptate iusto? Ullam quis at perspiciatis officia eaque.",
-    },
-    {
-      id: 6,
-      image: "/assets/animal4.jpg",
-      title: "Card title",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, quo! Omnis placeat voluptate iusto? Ullam quis at perspiciatis officia eaque.",
-    },
-  ];
+  {
+    id: 1,
+    image: "src/assets/events/pp.jpg",
+    title: "Project Pillar",
+    description:
+      "Our flagship pitch event where startups connect with top investors. 30% of 2022 startups secured funding or partnerships.",
+  },
+  {
+    id: 2,
+    image: "src/assets/events/foodfiesta.jpg",
+    title: "Food Fiesta",
+    description:
+      "A buzzing campus food fest blending taste with entrepreneurship. 1500+ visitors experienced student-led stalls and innovation.",
+  },
+  {
+    id: 3,
+    image: "src/assets/events/dtw.jpg",
+    title: "Design Thinking Workshop",
+    description:
+      "Hands-on workshop fostering creativity, empathy, and problem-solving through design thinking principles.",
+  },
+  
+  {
+    id: 4,
+    image: "src/assets/events/mte.jpg",
+    title: "Meet the Innovator",
+    description:
+      "High-energy session with Shark Tank–recognized founders sharing real startup journeys, failures, and growth strategies.",
+  },
+  {
+    id: 5,
+    image: "src/assets/events/mti.jpg",
+    title: "Meet the Entrepreneur",
+    description:
+      "Inspiring talks with founders and leaders on building businesses, tackling challenges, and scaling ideas."
+,
+  },
+  {
+    id: 6,
+    image: "src/assets/events/sih.jpg",
+    title: "SIH Internal Hackathon 2024",
+    description:
+      "Campus-level hackathon under Smart India Hackathon 2024, sparking innovation and selecting teams for the national stage.",
+  },
+];
+
 
   // Animation transforms data
   const transforms = [
@@ -74,11 +77,11 @@ const StickySection = () => {
     ],
     [
       [0, 50, 30, -80],
-      [20, -10, 60, 5],
+      [15, -5, -40, 60],
     ],
     [
       [0, 55, -15, 30],
-      [25, -15, 60, 95],
+      [15, -5, -40, 60],
     ],
     [
       [0, 45, -20, 25],
@@ -167,7 +170,7 @@ const StickySection = () => {
         className="absolute top-0 left-0 w-180vw h-full flex justify-center items-center"
         style={{ willChange: "transform" }}
       >
-        <h1 className="m-0 text-cream text-30vw font-light tracking-tighter-custom leading-none ">
+        <h1 className="m-0 text-cream text-30vw font-medium tracking-tighter-custom leading-none ">
           Our Journey
         </h1>
       </div>

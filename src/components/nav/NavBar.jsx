@@ -42,7 +42,7 @@ const NavBar = () => {
       <div className="flex items-center">
         <img className="h-11" src="ecell-logo.png" alt="ecell-logo" />
         <h2 className="font-[vampire] hidden sm:block font-bold text-[2vw] ">
-          Ecell Sakec
+          Ecell
         </h2>
       </div>
 
@@ -67,14 +67,6 @@ const NavBar = () => {
               end
             >
               <h3 className="px-3 rounded">Home</h3>
-            </NavLink>
-
-            <NavLink
-              to="/about"
-              onClick={handleLinkClick}
-              className={({ isActive }) => (isActive ? "active-page" : "")}
-            >
-              <h3 className="px-3 rounded">About</h3>
             </NavLink>
 
             <NavLink
