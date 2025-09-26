@@ -3,12 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card";
 import "../utils/gsap-setup";
-import imgPp from "../../assets/events/pp.jpg";
-import imgFoodFiesta from "../../assets/events/foodfiesta.jpg";
-import imgDtw from "../../assets/events/dtw.jpg";
-import imgMte from "../../assets/events/mte.jpg";
-import imgMti from "../../assets/events/mti.jpg";
-import imgSih from "../../assets/events/sih.jpg";
+import imgPp from "@/assets/events/pp.jpg";
+import imgFoodFiesta from "@/assets/events/foodfiesta.jpg";
+import imgDtw from "@/assets/events/dtw.jpg";
+import imgMte from "@/assets/events/mte.jpg";
+import imgMti from "@/assets/events/mti.jpg";
+import imgSih from "@/assets/events/sih.jpg";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
