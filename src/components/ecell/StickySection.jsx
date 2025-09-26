@@ -29,7 +29,7 @@ const StickySection = () => {
     },
     {
       id: 2,
-      image: imgFoodFiesta,
+      image: "https://i.pinimg.com/736x/90/42/c5/9042c5c6833f4a4932062f892691294f.jpg",
       title: "Food Fiesta",
       description:
         "A buzzing campus food fest blending taste with entrepreneurship. 1500+ visitors experienced student-led stalls and innovation.",

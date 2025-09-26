@@ -79,7 +79,7 @@ const data = [
 
 const Gallery4 = ({
   title = "Ecell Newsletters",
-  description = "Our newsletters bring you the latest updates, event highlights, and inspiring stories from the world of innovation and entrepreneurship. 🚀",
+  description = "Our newsletters bring you the latest updates, event highlights, and inspiring stories from the world of innovation and entrepreneurship.",
   items = data
 }) => {
   const [carouselApi, setCarouselApi] = useState();
@@ -108,10 +108,10 @@ const Gallery4 = ({
       <div className="container mx-auto">
         <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
           <div className="flex flex-col px-9 lg:pl-36 gap-4">
-            <h2 className="text-5xl text-center md:text-left font-[vampire] font-medium md:text-4xl lg:text-7xl">
+            <h2 className="text-5xl text-center md:text-left text-white font-[vampire] font-medium md:text-4xl lg:text-7xl">
               {title}
             </h2>
-            <p className="max-w-lg  text-center md:text-left font-[font1] text-sm md:text-xl  text-muted-foreground">{description}</p>
+            <p className="max-w-lg text-white  text-center md:text-left font-[font1] text-sm md:text-xl  text-muted-foreground">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
             {/* <Button
