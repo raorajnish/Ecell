@@ -49,7 +49,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
 
       {/* About Section */}
       <section className="border-dashed border-4 border-zinc-700 rounded-4xl  my-[5svh] mx-[4svw] relative w-[92svw] min-h-[90svh] p-4 flex flex-col items-center justify-center text-center">
-        <h1 className=" font-[vampire] p-10 text-4xl md:text-[4rem] font-semibold leading-tight md:leading-[1.1]  md:tracking-[0.1rem] w-full md:w-2/3 max-w-5xl mx-auto mb-6">
+        <h1 className=" font-[vampire] p-10 text-4xl md:text-[4rem] font-semibold leading-tight md:leading-[1.1]  md:tracking-[0.1rem] w-full md:w-2/3 max-w-5xl mx-auto mb-6 text-white">
          Ideas That Spark the Future
         </h1>
         <div className="w-full md:w-1/3 md:min-w-2xl px-2">
@@ -72,7 +72,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
         <div className="border-dashed border-4 border-zinc-700 rounded-4xl  my-[5svh] mx-[4svw] w-[92svw] min-h-[90svh]  flex  flex-col md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
             <div className="w-full md:w-3/4 p-2 md:p-0">
-              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] mb-4">
+              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] text-white mb-4">
                 Food Fiesta
               </h3>
               <AnimatedCopy>
@@ -100,7 +100,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
           </div>
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
             <div className="w-full md:w-3/4 p-2 md:p-0">
-              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] mb-4">
+              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] text-white mb-4">
                 Project Pillar
               </h3>
               <AnimatedCopy>
@@ -118,7 +118,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
         flex flex-col md:flex-row gap-4 md:gap-8 p-4">
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
             <div className="w-full md:w-3/4 p-2 md:p-0">
-              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] mb-4">
+              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] text-white mb-4">
                 Meet the Innovator
               </h3>
               <AnimatedCopy>
@@ -150,7 +150,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
           </div>
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
             <div className="w-full md:w-3/4 p-2 md:p-0">
-              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] mb-4">
+              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] text-white mb-4">
                 Meet the Entrepreneur
               </h3>
               <AnimatedCopy>
@@ -168,7 +168,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
         <div className="border-dashed border-4 border-zinc-700 rounded-4xl  my-[5svh] mx-[4svw] w-[92svw] min-h-[90svh]  flex  flex-col md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
             <div className="w-full md:w-3/4 p-2 md:p-0">
-              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] mb-4">
+              <h3 className="text-3xl md:text-[2.5rem] font-semibold leading-snug font-[vampire] tracking-[0.1rem] text-white mb-4">
                 Design Thinking Workshop
               </h3>
               <AnimatedCopy>
@@ -190,7 +190,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
 
       {/* Outro Section */}
       <section className="relative w-full min-h-[70svh] p-4 flex items-center justify-center text-center">
-        <h3 className="text-2xl md:text-[2.5rem] font-semibold leading-snug tracking-tight mb-4">
+        <h3 className="text-2xl text-white md:text-[2.5rem] font-semibold leading-snug tracking-tight mb-4">
           Stay tuned for our upcoming events!
         </h3>
       </section>

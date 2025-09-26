@@ -202,7 +202,7 @@ const TeamSection = () => {
                 Read More
               </button>
             </div>
-            <h3 className="team-title font-[vampire] text-2xl pt-5 ">{item.title}</h3>
+            <h3 className="team-title font-[vampire] text-white text-2xl pt-5 ">{item.title}</h3>
             <p className="team-desc font-[font1] ">{item.description}</p>
           </div>
         ))}
