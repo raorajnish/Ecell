@@ -3,12 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card";
 import "../utils/gsap-setup";
-import imgPp from "/assets/events/pp.jpg";
-// import imgFoodFiesta from "../../assets/events/foodfiesta.jpg";
-import imgDtw from "/assets/events/dtw.jpg";
-import imgMte from "/assets/events/mte.jpg";
-import imgMti from "/assets/events/mti.jpg";
-import imgSih from "/assets/events/sih.jpg";
+import imgPp from "../../assets/events/pp.jpg";
+import imgFoodFiesta from "../../assets/events/foodfiesta.jpg";
+import imgDtw from "../../assets/events/dtw.jpg";
+import imgMte from "../../assets/events/mte.jpg";
+import imgMti from "../../assets/events/mti.jpg";
+import imgSih from "../../assets/events/sih.jpg";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +29,7 @@ const StickySection = () => {
     },
     {
       id: 2,
-      image: "https://i.pinimg.com/736x/90/42/c5/9042c5c6833f4a4932062f892691294f.jpg",
+      image: imgFoodFiesta,
       title: "Food Fiesta",
       description:
         "A buzzing campus food fest blending taste with entrepreneurship. 1500+ visitors experienced student-led stalls and innovation.",
