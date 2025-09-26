@@ -3,6 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card";
 import "../utils/gsap-setup";
+import imgPp from "../../assets/events/pp.jpg";
+import imgFoodFiesta from "../../assets/events/foodfiesta.jpg";
+import imgDtw from "../../assets/events/dtw.jpg";
+import imgMte from "../../assets/events/mte.jpg";
+import imgMti from "../../assets/events/mti.jpg";
+import imgSih from "../../assets/events/sih.jpg";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -16,42 +22,42 @@ const StickySection = () => {
   const cardData = [
     {
       id: 1,
-      image: "/events/pp.jpg", // ✅ from public
+      image: imgPp,
       title: "Project Pillar",
       description:
         "Our flagship pitch event where startups connect with top investors. 30% of 2022 startups secured funding or partnerships.",
     },
     {
       id: 2,
-      image: "/events/foodfiesta.jpg",
+      image: imgFoodFiesta,
       title: "Food Fiesta",
       description:
         "A buzzing campus food fest blending taste with entrepreneurship. 1500+ visitors experienced student-led stalls and innovation.",
     },
     {
       id: 3,
-      image: "/events/dtw.jpg",
+      image: imgDtw,
       title: "Design Thinking Workshop",
       description:
         "Hands-on workshop fostering creativity, empathy, and problem-solving through design thinking principles.",
     },
     {
       id: 4,
-      image: "/events/mte.jpg",
+      image: imgMte,
       title: "Meet the Innovator",
       description:
         "High-energy session with Shark Tank–recognized founders sharing real startup journeys, failures, and growth strategies.",
     },
     {
       id: 5,
-      image: "/events/mti.jpg",
+      image: imgMti,
       title: "Meet the Entrepreneur",
       description:
         "Inspiring talks with founders and leaders on building businesses, tackling challenges, and scaling ideas.",
     },
     {
       id: 6,
-      image: "/events/sih.jpg",
+      image: imgSih,
       title: "SIH Internal Hackathon 2024",
       description:
         "Campus-level hackathon under Smart India Hackathon 2024, sparking innovation and selecting teams for the national stage.",
