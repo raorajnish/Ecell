@@ -40,7 +40,7 @@ const NavBar = () => {
   return (
     <nav className="h-[8vh] px-9 justify-between text-white flex items-center">
       <div className="flex items-center">
-        <img className="h-11" src="ecell-logo.png" alt="ecell-logo" />
+        <img className="h-11" src="/ecell-logo.png" alt="ecell-logo" />
         <h2 className="font-[vampire] hidden sm:block font-bold text-[2vw] ">
           Ecell
         </h2>

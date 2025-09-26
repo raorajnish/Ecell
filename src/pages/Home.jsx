@@ -29,7 +29,7 @@ const Home = () => {
         <SplineScene />
       </div>
       <div className="phone-bg absolute opacity-40 h-[100vh]   w-[100vw] -z-1">
-        <img className=" h-full w-full   " src="phone-bg.png" alt="" />
+        <img className=" h-full w-full   " src="/phone-bg.png" alt="" />
       </div>
 
       <div>

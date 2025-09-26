@@ -53,6 +53,14 @@
 // export default TeamSection;
 import React, { useEffect, useState, useCallback } from "react";
 import "./TeamSection.css";
+import pg1 from "../../assets/team/pg1.png";
+import pg2 from "../../assets/team/pg2.png";
+import pg3 from "../../assets/team/pg3.png";
+import pg4 from "../../assets/team/pg4.png";
+import pg5 from "../../assets/team/pg5.png";
+import pg6 from "../../assets/team/pg6.png";
+import pg7 from "../../assets/team/pg7.png";
+import pg8 from "../../assets/team/pg8.png";
 
 const TeamSection = () => {
   const newsletters = [
@@ -60,53 +68,53 @@ const TeamSection = () => {
       id: 1,
       title: "Design Weekly",
       description: "Latest trends & insights in modern design",
-      image: "src/assets/team/pg1.png",
+      image: pg1,
     },
     {
       id: 2,
       title: "Tech Digest",
       description: "Weekly updates from the tech world",
-      image: "src/assets/team/pg2.png",
+      image: pg2,
     },
     {
       id: 3,
       title: "Startup Spotlight",
       description: "Highlighting the most innovative startups",
-      image: "src/assets/team/pg3.png",
+      image: pg3,
     },
     {
       id: 4,
       title: "Innovation Hub",
       description: "Ideas and insights to fuel creativity",
-      image: "src/assets/team/pg4.png",
+      image: pg4,
     },
     {
       id: 5,
       title: "Creative Minds",
       description:
         "Exploring design, art, and creative strategies for professionals.",
-      image: "src/assets/team/pg5.png",
+      image: pg5,
     },
     {
       id: 6,
       title: "Future Tech",
       description:
         "Emerging technologies, AI, blockchain, and cutting-edge developments.",
-      image: "src/assets/team/pg6.png",
+      image: pg6,
     },
     {
       id: 7,
       title: "Growth Strategies",
       description:
         "Tips and strategies for startups, business growth, and productivity.",
-      image: "src/assets/team/pg7.png",
+      image: pg7,
     },
     {
       id: 8,
       title: "Trends & Insights",
       description:
         "Curated insights on design, tech, and business trends shaping the industry.",
-      image: "src/assets/team/pg8.png",
+      image: pg8,
     },
   ];
 

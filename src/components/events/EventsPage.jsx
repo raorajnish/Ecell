@@ -7,7 +7,7 @@ import { ImageSwiper } from "../image-swiper";
 
 export default function EventsPage() {
 
-const ffUrls = "src/assets/events/ff1.jpg,src/assets/events/ff2.jpg,src/assets/events/ff3.jpg,src/assets/events/ff4.jpg,src/assets/events/ff5.png,src/assets/events/ff6.png";
+const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,/events/ff5.png,/events/ff6.png";
 
 
   const lenisRef = useRef();
@@ -93,7 +93,7 @@ const ffUrls = "src/assets/events/ff1.jpg,src/assets/events/ff2.jpg,src/assets/e
         flex flex-col-reverse md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="src/assets/events/pp.jpg"
+              src="/events/pp.jpg"
               alt="Project Pillar"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -131,7 +131,7 @@ const ffUrls = "src/assets/events/ff1.jpg,src/assets/events/ff2.jpg,src/assets/e
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="src/assets/events/mti.jpg"
+              src="/events/mti.jpg"
               alt="Meet the Innovator"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -143,7 +143,7 @@ const ffUrls = "src/assets/events/ff1.jpg,src/assets/events/ff2.jpg,src/assets/e
         flex flex-col-reverse md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="src/assets/events/mte.jpg"
+              src="/events/mte.jpg"
               alt="Meet the Entrepreneur"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -181,7 +181,7 @@ const ffUrls = "src/assets/events/ff1.jpg,src/assets/events/ff2.jpg,src/assets/e
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="src/assets/events/dtw.jpg"
+              src="/events/dtw.jpg"
               alt="Food Fiesta"
               className="w-full h-[35vh] lg:h-[50vh] object-cover rounded-xl"
             />
