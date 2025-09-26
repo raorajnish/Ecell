@@ -11,7 +11,7 @@ import StickySection from "@/components/ecell/StickySection";
 import TargetCursor from "@/components/TargetCursor";
 import Newsletter from "@/components/home/email/Newsletter";
 import { Gallery4 } from "@/components/gallery4";
-import Footer from "@/components/home/main-footer";
+import Footer from "@/components/home/Main-footer";
 
 
 
