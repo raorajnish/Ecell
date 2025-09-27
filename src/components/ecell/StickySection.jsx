@@ -17,42 +17,42 @@ const StickySection = () => {
   const cardData = [
     {
       id: 1,
-      image: "/events/pp.jpg",
+      image: "https://i.pinimg.com/736x/f2/95/41/f2954155cfcd3da4e6b66263cee9351a.jpg",
       title: "Project Pillar",
       description:
         "Our flagship pitch event where startups connect with top investors. 30% of 2022 startups secured funding or partnerships.",
     },
     {
       id: 2,
-      image: "/events/foodfiesta.jpg",
+      image: "https://i.pinimg.com/736x/90/42/c5/9042c5c6833f4a4932062f892691294f.jpg",
       title: "Food Fiesta",
       description:
         "A buzzing campus food fest blending taste with entrepreneurship. 1500+ visitors experienced student-led stalls and innovation.",
     },
     {
       id: 3,
-      image: "/events/dtw.jpg",
+      image: "https://i.pinimg.com/736x/3d/2f/01/3d2f01cbfcced247d73375c54f4b3ccc.jpg",
       title: "Design Thinking Workshop",
       description:
         "Hands-on workshop fostering creativity, empathy, and problem-solving through design thinking principles.",
     },
     {
       id: 4,
-      image: "/events/mte.jpg",
+      image: "https://i.pinimg.com/736x/11/47/aa/1147aa32861e5722534c6234af83c268.jpg",
       title: "Meet the Innovator",
       description:
         "High-energy session with Shark Tank–recognized founders sharing real startup journeys, failures, and growth strategies.",
     },
     {
       id: 5,
-      image: "/events/mti.jpg",
+      image: "https://i.pinimg.com/736x/75/6e/5b/756e5bcdaf1fb0a2c03f8017a05f17a8.jpg",
       title: "Meet the Entrepreneur",
       description:
         "Inspiring talks with founders and leaders on building businesses, tackling challenges, and scaling ideas.",
     },
     {
       id: 6,
-      image: "/events/sih.jpg",
+      image: "https://i.pinimg.com/736x/ed/a2/f2/eda2f2674db3ec284b211f946b5ffe73.jpg",
       title: "SIH Internal Hackathon 2024",
       description:
         "Campus-level hackathon under Smart India Hackathon 2024, sparking innovation and selecting teams for the national stage.",

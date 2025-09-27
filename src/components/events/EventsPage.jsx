@@ -53,11 +53,11 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
          Ideas That Spark the Future
         </h1>
         <div className="w-full md:w-1/3 md:min-w-2xl px-2">
-          <AnimatedCopy>
+          {/* <AnimatedCopy> */}
             <p className="text-base font-[font1] md:text-xl leading-relaxed font-bold">
               Showcasing innovation, collaboration, and entrepreneurship — these events bring together students, startups, and leaders to celebrate bold ideas and real-world impact. From hands-on workshops to high-energy pitch competitions, each experience empowers participants to explore new technologies, develop creative solutions, and connect with mentors and investors. Join us to learn, grow, and be inspired by the brightest minds shaping tomorrow.
             </p>
-          </AnimatedCopy>
+          {/* </AnimatedCopy> */}
         </div>
       </section>
 
@@ -93,7 +93,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
         flex flex-col-reverse md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="/events/pp.jpg"
+              src="https://i.pinimg.com/736x/f2/95/41/f2954155cfcd3da4e6b66263cee9351a.jpg"
               alt="Project Pillar"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -131,7 +131,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="/events/mti.jpg"
+              src="https://i.pinimg.com/736x/f2/95/41/f2954155cfcd3da4e6b66263cee9351a.jpg"
               alt="Meet the Innovator"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -143,7 +143,7 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
         flex flex-col-reverse md:flex-row gap-4 md:gap-8  p-4">
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="/events/mte.jpg"
+              src="https://i.pinimg.com/736x/11/47/aa/1147aa32861e5722534c6234af83c268.jpg"
               alt="Meet the Entrepreneur"
               className="w-full h-auto object-cover rounded-xl"
             />
@@ -181,8 +181,8 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="/events/dtw.jpg"
-              alt="Food Fiesta"
+              src="https://i.pinimg.com/736x/3d/2f/01/3d2f01cbfcced247d73375c54f4b3ccc.jpg"
+              alt="Design thinking"
               className="w-full h-[35vh] lg:h-[50vh] object-cover rounded-xl"
             />
           </div>

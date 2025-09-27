@@ -74,7 +74,7 @@ export default function AnimatedCopy({
     ScrollTrigger.create({
         trigger: containerRef.current,
         start: "top 90%",
-        end: "top 20%",
+        end: "top 60%",
         scrub: 1,
         onUpdate: (self) => {
             const progress = self.progress;

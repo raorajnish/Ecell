@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 
 export const ImageSwiper = ({
   images,
-  cardWidth = 350,  // 16rem = 256px
-  cardHeight = 280, // 22rem = 352px
+  cardWidth = 300,  // 16rem = 256px
+  cardHeight = 230, // 22rem = 352px
   className = ''
 }) => {
   const cardStackRef = useRef(null);
