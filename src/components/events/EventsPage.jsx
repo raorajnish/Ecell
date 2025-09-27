@@ -3,11 +3,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
 import AnimatedCopy from "@/components/AnimatedCopy";
-import { ImageSwiper } from "../image-swiper";
+// import { ImageSwiper } from "../image-swiper";
 
 export default function EventsPage() {
 
-const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,/events/ff5.png,/events/ff6.png";
+// const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,/events/ff5.png,/events/ff6.png";
 
 
   const lenisRef = useRef();
@@ -84,7 +84,11 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
             </div>
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
-            <ImageSwiper  images={ffUrls} />
+            <img
+              src="https://i.pinimg.com/736x/90/42/c5/9042c5c6833f4a4932062f892691294f.jpg"
+              alt="Project Pillar"
+              className="w-full h-auto object-cover rounded-xl"
+            />
           </div>
         </div>
 
