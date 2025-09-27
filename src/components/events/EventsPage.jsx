@@ -53,11 +53,11 @@ const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,
          Ideas That Spark the Future
         </h1>
         <div className="w-full md:w-1/3 md:min-w-2xl px-2">
-          {/* <AnimatedCopy> */}
+          <AnimatedCopy>
             <p className="text-base font-[font1] md:text-xl leading-relaxed font-bold">
               Showcasing innovation, collaboration, and entrepreneurship — these events bring together students, startups, and leaders to celebrate bold ideas and real-world impact. From hands-on workshops to high-energy pitch competitions, each experience empowers participants to explore new technologies, develop creative solutions, and connect with mentors and investors. Join us to learn, grow, and be inspired by the brightest minds shaping tomorrow.
             </p>
-          {/* </AnimatedCopy> */}
+          </AnimatedCopy>
         </div>
       </section>
 
