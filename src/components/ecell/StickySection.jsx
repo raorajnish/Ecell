@@ -38,14 +38,14 @@ const StickySection = () => {
     },
     {
       id: 4,
-      image: "https://i.pinimg.com/736x/11/47/aa/1147aa32861e5722534c6234af83c268.jpg",
+      image: "https://i.pinimg.com/736x/75/6e/5b/756e5bcdaf1fb0a2c03f8017a05f17a8.jpg",
       title: "Meet the Innovator",
       description:
         "High-energy session with Shark Tank–recognized founders sharing real startup journeys, failures, and growth strategies.",
     },
     {
       id: 5,
-      image: "https://i.pinimg.com/736x/75/6e/5b/756e5bcdaf1fb0a2c03f8017a05f17a8.jpg",
+      image: "https://i.pinimg.com/736x/11/47/aa/1147aa32861e5722534c6234af83c268.jpg",
       title: "Meet the Entrepreneur",
       description:
         "Inspiring talks with founders and leaders on building businesses, tackling challenges, and scaling ideas.",

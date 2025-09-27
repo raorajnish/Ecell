@@ -135,7 +135,7 @@ export default function EventsPage() {
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
-              src="https://i.pinimg.com/736x/f2/95/41/f2954155cfcd3da4e6b66263cee9351a.jpg"
+              src="https://i.pinimg.com/736x/75/6e/5b/756e5bcdaf1fb0a2c03f8017a05f17a8.jpg"
               alt="Meet the Innovator"
               className="w-full h-auto object-cover rounded-xl"
             />
