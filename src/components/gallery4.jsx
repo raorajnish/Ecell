@@ -19,28 +19,28 @@ const data = [
     id: "design-weekly",
     title: "Design Weekly",
     description: "Latest trends & insights in modern design",
-    href: "#",
+    href: "/newsletters",
     image: pg1,
   },
   {
     id: "tech-digest",
     title: "Tech Digest",
     description: "Weekly updates from the tech world",
-    href: "#",
+    href: "/newsletters",
     image: pg2,
   },
   {
     id: "startup-spotlight",
     title: "Startup Spotlight",
     description: "Highlighting the most innovative startups",
-    href: "#",
+    href: "/newsletters",
     image: pg3,
   },
   {
     id: "innovation-hub",
     title: "Innovation Hub",
     description: "Ideas and insights to fuel creativity",
-    href: "#",
+    href: "/newsletters",
     image: pg4,
   },
   {
@@ -48,7 +48,7 @@ const data = [
     title: "Creative Minds",
     description:
       "Exploring design, art, and creative strategies for professionals.",
-    href: "#",
+    href: "/newsletters",
     image: pg5,
   },
   {
@@ -56,7 +56,7 @@ const data = [
     title: "Future Tech",
     description:
       "Emerging technologies, AI, blockchain, and cutting-edge developments.",
-    href: "#",
+    href: "/newsletters",
     image: pg6,
   },
   {
@@ -64,7 +64,7 @@ const data = [
     title: "Growth Strategies",
     description:
       "Tips and strategies for startups, business growth, and productivity.",
-    href: "#",
+    href: "/newsletters",
     image: pg7,
   },
   {
@@ -72,7 +72,7 @@ const data = [
     title: "Trends & Insights",
     description:
       "Curated insights on design, tech, and business trends shaping the industry.",
-    href: "#",
+    href: "/newsletters",
     image: pg8,
   },
 ];
