@@ -9,6 +9,7 @@ import NavBar from "./components/nav/NavBar";
 
 import { ReactLenis } from "lenis/react";
 import gsap from "gsap";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const lenisRef = useRef();
@@ -25,6 +26,8 @@ const App = () => {
     };
   }, []);
 
+
+
   return (
     <ReactLenis 
       ref={lenisRef} 
@@ -36,6 +39,8 @@ const App = () => {
         <div className="fixed top-8 left-[0.5vw] w-[99vw] z-50 pointer-events-auto">
           <NavBar />
         </div>
+        
+        <ScrollToTop lenis={lenisRef.current?.lenis} />
 
         {/* Routes */}
         <Routes>
