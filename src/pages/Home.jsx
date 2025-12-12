@@ -96,7 +96,7 @@ const Home = () => {
 
           <div className="">
             <CountdownTimer
-              deadline="2025-10-10T09:30:00"
+              deadline="2025-12-20T09:30:00"
               className="text-white/50 pt-6 -mb-20"
               onCompleteContent={
                 <div className="text-red-600 font-bold">Event Started!</div>

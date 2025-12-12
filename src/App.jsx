@@ -6,6 +6,8 @@ import Events from "./pages/Events";
 import Team from "./pages/Team";
 import Newsletters from "./pages/Newsletters";
 import NavBar from "./components/nav/NavBar";
+import Navbar from "./components/nav/NavbarNew";
+
 
 import { ReactLenis } from "lenis/react";
 import gsap from "gsap";
@@ -36,8 +38,9 @@ const App = () => {
     >
       <div>
         {/* Fixed Navbar */}
-        <div className="fixed top-8 left-[0.5vw] w-[99vw] z-50 pointer-events-auto">
-          <NavBar />
+        <div className="fixed top-0 left-[0] w-[100vw] z-50 pointer-events-auto">
+          {/* <NavBar /> */}
+          <Navbar />
         </div>
         
         <ScrollToTop lenis={lenisRef.current?.lenis} />

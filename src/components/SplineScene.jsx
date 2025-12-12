@@ -3,8 +3,8 @@ import React from 'react'
 
 const SplineScene = () => {
   return (
-    <div className='w-screen h-screen'>
-      <Spline scene="https://prod.spline.design/SHsxwCXxs4vCE0H3/scene.splinecode"  />
+    <div className="w-screen h-screen">
+      <Spline scene="https://prod.spline.design/SHsxwCXxs4vCE0H3/scene.splinecode" />
     </div>
   );
 }
