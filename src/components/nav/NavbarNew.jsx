@@ -38,8 +38,18 @@ const Navbar = ({ contentRef }) => {
       target: "_blank",
       rel: "noopener noreferrer",
     },
-    { name: "Twitter", url: "https://x.com/ecellsakec", target: "_blank", rel: "noopener noreferrer" },
-    { name: "Sakec", url: "https://sakec.ac.in/", target: "_blank", rel: "noopener noreferrer" },
+    {
+      name: "Twitter",
+      url: "https://x.com/ecellsakec",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      name: "Sakec",
+      url: "https://sakec.ac.in/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
   ];
 
   const cleanupPreviewImages = () => {
@@ -289,10 +299,9 @@ const Navbar = ({ contentRef }) => {
       <nav>
         <div
           className="logo px-3 py-1 cursor-pointer rounded-xl border border-white/20 backdrop-blur-md 
-                bg-white/10 shadow-[0_4px_20px_rgba(255,255,255,0.01)] transition-all duration-300 
+                bg-white/10 shadow-[0_4px_20px_rgba(255,255,255,0.1)] transition-all duration-300 
                 hover:bg-white/20 hover:shadow-[0_4px_20px_rgba(255,255,255,0.15)]"
         >
-          
           <Link to="/" className="flex items-center">
             <img src="/ecell-logo.png" alt="logo" className="w-8 h-6 mr-1" />
             <span className="text-white text-l">EIC SAKEC</span>
@@ -366,12 +375,14 @@ const Navbar = ({ contentRef }) => {
             </div>
           </div>
           <div className="menu-footer">
-            <div className="col-lg">
+            <div className="col-lg text-white/50">
               <a href="#">Sponsors</a>
             </div>
-            <div className="col-sm">
+            <div className="col-sm text-right text-white/50">
               <a href="#">Our Story</a>
-              <a href="#">Become a Member</a>
+              <a href="#" className="max-w-full">
+                Become a Member
+              </a>
             </div>
           </div>
         </div>

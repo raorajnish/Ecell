@@ -78,7 +78,7 @@ const data = [
 ];
 
 const Gallery4 = ({
-  title = "Ecell Newsletters",
+  title = "EIC Newsletters",
   description = "Our newsletters bring you the latest updates, event highlights, and inspiring stories from the world of innovation and entrepreneurship.",
   items = data
 }) => {

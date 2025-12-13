@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         {/* Mobile Brand */}
         <div className="lg:hidden mb-12">
-          <h2 className="text-3xl font-bold tracking-wide">E-CELL SAKEC</h2>
+          <h2 className="text-3xl font-bold tracking-wide">EIC SAKEC</h2>
           <p className="text-gray-300 leading-relaxed mt-4">
             Fostering innovation and entrepreneurship through events, workshops,
             and initiatives that empower students to turn ideas into impact.
@@ -83,10 +83,10 @@ const Footer = () => {
                 href="mailto:ecell@sakec.ac.in"
                 className="flex items-center hover:text-white transition group"
               >
-                <Mail
-                  size={18}
+                {/* <Mail
+                  size={38}
                   className="mr-3 group-hover:scale-110 duration-200"
-                />
+                /> */}
                 ecell@sakec.ac.in
               </a>
 
@@ -94,10 +94,10 @@ const Footer = () => {
                 href="tel:+919702852450"
                 className="flex items-center hover:text-white transition group"
               >
-                <Phone
+                {/* <Phone
                   size={18}
                   className="mr-3 group-hover:scale-110 duration-200"
-                />
+                /> */}
                 (+91) 9702852450
               </a>
             </div>
@@ -105,8 +105,8 @@ const Footer = () => {
         </div>
 
         {/* COPYRIGHT */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
-          © 2024 ECELL SAKEC™. All rights reserved.
+        <div className="mt-2 pt-4 border-t border-white/10 text-center text-gray-400 text-sm">
+          © 2024 EIC SAKEC™. All rights reserved.
         </div>
       </div>
     </footer>

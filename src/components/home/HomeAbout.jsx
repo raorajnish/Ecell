@@ -57,7 +57,7 @@ const HomeAbout = () => {
           className=" home-about-1 w-full lg:w-2/3 font-[vampire] flex justify-center lg:justify-start items-center text-3xl sm:text-6xl md:text-6xl lg:text-7xl text-white pt-[10vh]  lg:pt-[10vh] px-4 lg:pl-48 text-center lg:text-left"
         >
           About <br />
-          Ecell Sakec
+          EIC Sakec
         </div>
 
         {/* Right / Bottom (Content) */}
@@ -66,7 +66,7 @@ const HomeAbout = () => {
           ref={AboutContentRef}
           className="about-text w-full lg:w-2/3 pt-5  lg:pt-[5vh] px-[10vw]  lg:px-[10vw] lg:ml-[30vw] sm:px-10 md:px-[15vw] text-l sm:text-lg md:text-xl  font-[font1] text-center lg:text-center"
         >
-          Every great journey begins with an idea and at SAKEC ECELL, ideas have been our driving force since 2017. From leadership talks and innovation-driven events like Meet the Entrepreneur, Meet the Innovator, Design Thinking Workshops, Food Fiesta, and Project Pillar, we’ve grown with every step. Starting with Hunar in 2017, launching Project Pillar in 2022, and now hosting our biggest Food Fiesta in 2025, our journey has been one of impact and growth. And this is just the beginning, the best of SAKEC E-CELL is yet to come.
+          Every great journey begins with an idea and at SAKEC EIC, ideas have been our driving force since 2017. From leadership talks and innovation-driven events like Meet the Entrepreneur, Meet the Innovator, Design Thinking Workshops, Food Fiesta, and Project Pillar, we’ve grown with every step. Starting with Hunar in 2017, launching Project Pillar in 2022, and now hosting our biggest Food Fiesta in 2025, our journey has been one of impact and growth. And this is just the beginning, the best of SAKEC EIC is yet to come.
         </div>
         
       </div>
