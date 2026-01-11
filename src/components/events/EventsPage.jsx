@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
@@ -31,6 +31,8 @@ export default function EventsPage() {
     src="https://i.pinimg.com/736x/e6/d8/76/e6d876af65ad4ebd42c677f90d5e3066.jpg"
     alt="Hero"
     className="w-full h-full object-cover rounded-xl"
+    loading="lazy"
+    decoding="async"
   />
 
   {/* Full-section Blur & Tint Overlay */}
@@ -63,7 +65,7 @@ export default function EventsPage() {
 
       {/* Banner Section */}
       <section className="  relative w-full h-[20vh] md:h-[60svh] p-4 mb-10">
-        <img src="https://i.pinimg.com/originals/d8/e6/eb/d8e6eb6b345ada088e2448947c483ab4.gif" alt="" className="w-full h-full overflow-hidden object-cover rounded-3xl" />
+        <img src="https://i.pinimg.com/originals/d8/e6/eb/d8e6eb6b345ada088e2448947c483ab4.gif" alt="" className="w-full h-full overflow-hidden object-cover rounded-3xl" loading="lazy" decoding="async" />
       </section>
 
       {/* Services Section */}
@@ -86,8 +88,10 @@ export default function EventsPage() {
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
             <img
               src="https://i.pinimg.com/736x/90/42/c5/9042c5c6833f4a4932062f892691294f.jpg"
-              alt="Project Pillar"
+              alt="Food Fiesta"
               className="w-full h-auto object-cover rounded-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -100,6 +104,8 @@ export default function EventsPage() {
               src="https://i.pinimg.com/736x/f2/95/41/f2954155cfcd3da4e6b66263cee9351a.jpg"
               alt="Project Pillar"
               className="w-full h-auto object-cover rounded-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
@@ -138,6 +144,8 @@ export default function EventsPage() {
               src="https://i.pinimg.com/736x/75/6e/5b/756e5bcdaf1fb0a2c03f8017a05f17a8.jpg"
               alt="Meet the Innovator"
               className="w-full h-auto object-cover rounded-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -150,6 +158,8 @@ export default function EventsPage() {
               src="https://i.pinimg.com/736x/11/47/aa/1147aa32861e5722534c6234af83c268.jpg"
               alt="Meet the Entrepreneur"
               className="w-full h-auto object-cover rounded-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="flex-1 flex flex-col justify-center items-center rounded-xl overflow-hidden">
@@ -188,6 +198,8 @@ export default function EventsPage() {
               src="https://i.pinimg.com/736x/3d/2f/01/3d2f01cbfcced247d73375c54f4b3ccc.jpg"
               alt="Design thinking"
               className="w-full h-[35vh] lg:h-[50vh] object-cover rounded-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
