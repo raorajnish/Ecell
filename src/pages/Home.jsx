@@ -94,9 +94,9 @@ const Home = () => {
 
           {/* Button */}
           <div className="w-full pointer-events-auto p-4 flex justify-center">
-            <Link to="/events">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd99b2QEWfRWLBgnomGPladGO6EfRgYiBoId5ETIU5STjDKMw/viewform" target="_blank">
               <CornerAccentButton className="cursor-pointer cursor-target text-sm sm:text-base md:text-lg" />
-            </Link>
+            </a>
           </div>
 
           <div className="">
