@@ -38,17 +38,18 @@ const Home = () => {
           {/* Static word + Rotating badge */}
           <div className="flex items-center gap-1 font-extrabold text-center">
             <span className="text-gray-200 text-[4vw] sm:text-[3vh]">
-              Creative
+              Where
             </span>
             <RotatingText
               texts={[
-                "thinking",
-                "ideas",
-                "solutions",
-                "visions",
-                "innovation",
-                "growth",
-              ]}
+  "flavours",
+  "ideas",
+  "innovation",
+  // "entrepreneurship",
+  "foodpreneurs",
+  "creativity",
+]}
+
               mainClassName="px-2 cursor-target sm:px-3 bg-[#6C4CFF] text-white text-[4vw] sm:text-[3vh] overflow-hidden py-1 rounded-lg"
               staggerFrom="last"
               initial={{ y: "100%" }}
@@ -63,22 +64,26 @@ const Home = () => {
 
           {/* Subheading */}
           <h2 className=" text-[3vw] md:text-[2vw] lg:text-[2vw] pt-6 text-center">
-            🤝 Connecting Founders & Investors
-          </h2>
+  🍴 Entrepreneurship & Innovation Cell × PRATISTHA
+</h2>
+
 
           {/* Main Heading */}
 
           <h1 className=" text-[10vw] sm:text-[8vw] md:text-[8vw] lg:text-[9vw] text-white font-[vampire] tracking-wider mt-1 mb-5 uppercase font-bold text-center leading-tight">
-            Project Pillar 2025
+            Food Fiesta 2026
           </h1>
 
           {/* Description */}
-          <h3 className="text-[12px] sm:text-base md:text-lg text-center -mt-5 max-w-[90%] sm:max-w-[80%] md:max-w-[70%]">
-            A curated platform for startups to gain funding, mentorship, and
-            visibility.
-            <br className="hidden sm:block" />2 days. Top founders. Live
-            pitches. Real investments.
-          </h3>
+          <h3 className="text-[12px] sm:text-base md:text-lg text-center mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%]">
+  Got a dish with a twist worth selling?
+  Step into the shoes of a real <span className="font-semibold text-white">Foodpreneur</span>.
+  <br className="hidden sm:block" />
+  Set up your own stall, showcase your signature dish, and experience the real side of food entrepreneurship.
+</h3>
+
+
+
 
           {/* Icon */}
           <img
@@ -96,13 +101,14 @@ const Home = () => {
 
           <div className="">
             <CountdownTimer
-              deadline="2025-12-20T09:30:00"
+              deadline="2026-02-16T09:30:00"
               className="text-white/50 pt-6 -mb-20"
               onCompleteContent={
-                <div className="text-red-600 font-bold">Event Started!</div>
+                <div className="text-yellow-600 font-bold">🍔 Food Fiesta is LIVE!</div>
               }
             />
           </div>
+          
 
           {/* Scroll down hint */}
           <div className=" -mt-24 sm:mt-0 absolute bottom-5 right-4 bg-gray-950 text-gray-200 py-2 px-5 rounded-[5px]">
@@ -113,7 +119,7 @@ const Home = () => {
         </div>
         <div className="h-fit  pt-20 w-full flex justify-center flex-col items-center  ">
           <h2 className="font-[vampire] text-white mb-6 text-6xl  ">
-            Project Pillar
+            Food Fiesta
           </h2>
           <MagicBento
             textAutoHide={true}

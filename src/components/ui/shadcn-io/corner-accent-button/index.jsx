@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 export const CornerAccentButton = React.forwardRef(({
   className,
-  children = "Explore More",
+  children = "Register Now",
   ...props
 }, ref) => {
   return (

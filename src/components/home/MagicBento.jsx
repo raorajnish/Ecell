@@ -12,31 +12,34 @@ const MOBILE_BREAKPOINT = 768
 const cardData = [
   {
     color: "#060010",
-    title: "Innovation Hub",
+    title: "Foodpreneur Zone",
     description:
-      "Fostering breakthrough ideas and cutting-edge solutions for tomorrow's entrepreneurs. Join our community of innovators.",
-    label: "Innovation",
+      "Turn your culinary creativity into a business. Experiment with flavours, pricing, branding, and customer experience in a real-world setup.",
+    label: "Foodpreneurship",
   },
   {
     color: "#060010",
-    title: "Startup Incubator",
-    description: "Transform your vision into reality with our comprehensive program",
-    label: "Incubation",
-  },
-  {
-    color: "#060010",
-    title: "Funding",
-    description: "Connect with investors and secure funding for your startup",
-    label: "Investment",
-  },
-  {
-    color: "#060010",
-    title: "Community Network & Events",
+    title: "Live Food Stalls",
     description:
-      "Join 1000+ entrepreneurs, attend workshops, hackathons, and build lasting connections in our thriving ecosystem",
-    label: "Network",
+      "Set up your own stall, showcase your signature dish, and compete in a vibrant student-driven food carnival.",
+    label: "Stalls",
   },
-]
+  {
+    color: "#060010",
+    title: "Sales Experience",
+    description:
+      "Understand real customer behavior, manage sales, and learn what it takes to run a food business successfully.",
+    label: "Business",
+  },
+  {
+    color: "#060010",
+    title: "Community & Celebration",
+    description:
+      "A perfect blend of food, fun, and entrepreneurship—connect with fellow students, creators, and innovators.",
+    label: "Fiesta",
+  },
+];
+
 
 const calculateSpotlightValues = (radius) => ({
   proximity: radius * 0.5,

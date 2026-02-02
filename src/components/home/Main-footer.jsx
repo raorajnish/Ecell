@@ -20,15 +20,17 @@ const Footer = () => {
             and initiatives that empower students to turn ideas into impact.
           </p>
 
-          <div className="flex space-x-4 mt-6">
+          <div className="flex space-x-4 mt-6 cursor-pointer">
             <FooterIcon
               href="https://www.instagram.com/ecellsakec/"
               Icon={Instagram}
+              className="cursor-pointer"
             />
             <FooterIcon href="https://x.com/ecellsakec" Icon={Twitter} />
             <FooterIcon
               href="https://www.linkedin.com/company/entrepreneurship-and-innovationcell/posts/?feedView=all"
               Icon={Linkedin}
+              className="cursor-pointer"
             />
           </div>
         </div>
@@ -37,7 +39,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Desktop Branding */}
           <div className="hidden lg:block space-y-6">
-            <h2 className="text-3xl font-bold tracking-wide">ECELL SAKEC™</h2>
+            <h2 className="text-3xl font-bold tracking-wide">EIC SAKEC™</h2>
             <p className="text-gray-300 leading-relaxed max-w-sm">
               Fostering innovation and entrepreneurship through events,
               workshops, and initiatives that empower students to turn ideas
@@ -91,14 +93,14 @@ const Footer = () => {
               </a>
 
               <a
-                href="tel:+919702852450"
+                href="tel:+917718063429"
                 className="flex items-center hover:text-white transition group"
               >
                 {/* <Phone
                   size={18}
                   className="mr-3 group-hover:scale-110 duration-200"
                 /> */}
-                (+91) 9702852450
+                (+91) 77180 63429
               </a>
             </div>
           </div>

@@ -379,7 +379,7 @@ const Navbar = ({ contentRef }) => {
               <a href="#">Sponsors</a>
             </div>
             <div className="col-sm text-right text-white/50">
-              <a href="#">Our Story</a>
+              <a href="https://www.sakec.ac.in/entrepreneurship-cell/food-fiesta-2026/" target="_blank" rel="noopener noreferrer">Food Fiesta</a>
               <a href="#" className="max-w-full">
                 Become a Member
               </a>
