@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
 import AnimatedCopy from "@/components/AnimatedCopy";
+import { Button } from "@/components/ui/button";
 // import { ImageSwiper } from "../image-swiper";
 
 export default function EventsPage() {
+  const navigate = useNavigate();
 
-// const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,/events/ff5.png,/events/ff6.png";
-
+  // const ffUrls = "/events/ff1.jpg,/events/ff2.jpg,/events/ff3.jpg,/events/ff4.jpg,/events/ff5.png,/events/ff6.png";
 
   const lenisRef = useRef();
 
@@ -80,7 +82,6 @@ export default function EventsPage() {
                   A buzzing campus food fest blending taste with entrepreneurship. Over 1500+ visitors experienced student-led stalls, culinary innovations, and interactive activities. The event promotes creative business ideas, hands-on experimentation, and connects aspiring food entrepreneurs with mentors and enthusiasts.
                 </p>
               </AnimatedCopy>
-            
             </div>
           </div>
           <div className="flex-1 flex justify-center items-center rounded-xl overflow-hidden">
