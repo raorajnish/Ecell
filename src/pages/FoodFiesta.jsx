@@ -6,14 +6,7 @@ import { motion } from 'framer-motion';
 import { Menu, X, Utensils, Music, Calendar, MapPin, ChefHat, Pizza, Instagram, Linkedin, Clock, Star, Trophy, Briefcase } from 'lucide-react';
 import { ImagesSlider } from '../components/ui/images-slider';
 import { EmblaCarousel } from '../components/ui/embla-carousel';
-import img1 from '../assets/events/ff1.JPG';
-import img2 from '../assets/events/ff2.JPG';
-import img3 from '../assets/events/ff3.JPG';
-import img4 from '../assets/events/ff4.JPG';
-import img5 from '../assets/events/ff5.png';
-import img6 from '../assets/events/ff6.png';
-import img7 from '../assets/events/ff1.JPG';
-import img8 from '../assets/events/ff2.JPG';
+
 
 /* 
   Neo-Brutalist Theme Constants:
@@ -102,10 +95,10 @@ const Navbar = () => {
 
 const Hero = () => {
   const heroImages = [
-    img1,
-    img2,
-    img3,
-    img4
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img1_unt6rg.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img2_zurxa4.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292908/img3_fx9vak.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img4_b8xzft.jpg"
   ];
 
   return (
@@ -286,8 +279,14 @@ const Timeline = () => {
 
 const Gallery = () => {
   const images = [
-    img1, img2, img3, img4, img5, img6, img7, img8,
-    img1, img2, img3, img4
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img1_unt6rg.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img2_zurxa4.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292908/img3_fx9vak.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img4_b8xzft.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292909/img5_mvhdto.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292908/img6_apxo6z.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292908/img7_x1onrx.jpg",
+    "https://res.cloudinary.com/dameech1u/image/upload/v1770292908/img8_fz1qrp.jpg"
   ];
 
   return (
