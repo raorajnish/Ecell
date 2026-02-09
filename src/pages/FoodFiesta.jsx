@@ -3,10 +3,15 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { motion } from 'framer-motion';
-import { Menu, X, Utensils, Music, Calendar, MapPin, ChefHat, Pizza, Instagram, Linkedin, Clock, Star, Trophy, Briefcase } from 'lucide-react';
+import { Menu, X, Utensils, Music, Calendar, MapPin, ChefHat, Pizza, Instagram, Linkedin, Clock, Star, Trophy, Briefcase, Store } from 'lucide-react';
 import { ImagesSlider } from '../components/ui/images-slider';
 import { EmblaCarousel } from '../components/ui/embla-carousel';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUtensils,
+  faStore,
+  faMusic
+} from "@fortawesome/free-solid-svg-icons";
 
 /* 
   Neo-Brutalist Theme Constants:
@@ -20,20 +25,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#FFD700] border-b-4 border-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 items-center h-20">
+    <nav className="fixed top-0 h-20 left-0 w-full z-1000 bg-[#FFD700] border-b-4 border-black">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
           
           {/* Logo Section - Left Align */}
-          <div className="flex items-center gap-2 justify-self-start">
+          <div className="flex items-center gap-2">
              <div className="w-8 h-8 md:w-10 md:h-10 bg-white border-2 border-black rounded-full flex items-center justify-center">
                 <ChefHat className="w-5 h-5 md:w-6 md:h-6 text-black" />
              </div>
-             <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-black tracking-tighter truncate max-w-[200px] sm:max-w-none" style={{ fontFamily: "'Bangers', cursive" }}>FOOD FIESTA</h1>
+             <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-black truncate max-w-[200px] sm:max-w-none" style={{ fontFamily: "'Bangers', cursive" }}>FOOD FIESTA</h1>
           </div>
 
           {/* Desktop Navigation - Center Align */}
-          <div className="hidden md:flex justify-self-center items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-12 flex-1 justify-center">
             {['Home', 'Event', 'Contact'].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`} className="text-black font-bold text-xl hover:underline decoration-4 decoration-[#ff3333] underline-offset-4" style={{ fontFamily: "'Comic Neue', cursive" }}>
                 {item}
@@ -42,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Register Button - Right Align */}
-          <div className="hidden md:flex justify-self-end items-center">
+          <div className="hidden md:flex items-center">
              <Button 
                 className="bg-[#ff3333] text-white font-bold border-2 border-black hover:bg-[#cc0000] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-lg px-6 tracking-wide"
                 style={{ fontFamily: "'Bangers', cursive" }}
@@ -53,7 +58,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Toggle - Right Align on Mobile */}
-          <div className="flex items-center md:hidden justify-self-end">
+          <div className="flex items-center md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-900 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
               {isOpen ? <X className="block h-8 w-8" /> : <Menu className="block h-8 w-8" />}
             </button>
@@ -139,7 +144,7 @@ const Hero = () => {
 
 const Marquee = () => {
     return (
-        <div className="bg-black text-[#FFD700] py-3 border-y-4 border-black overflow-hidden whitespace-nowrap sticky top-20 z-40 transform rotate-[-1deg] w-[105%] -ml-[2.5%] flex antialiased shadow-lg">
+        <div className="bg-black text-[#FFD700] py-3 border-y-4 border-black overflow-hidden whitespace-nowrap  top-20 z-10 transform rotate-[-1deg] w-[105%] -ml-[2.5%] flex antialiased shadow-lg">
             <div className="animate-marquee inline-block font-black text-2xl min-w-full px-4 flex-shrink-0 tracking-widest" style={{ fontFamily: "'Bangers', cursive" }}>
                 REGISTER NOW • LIVE MUSIC • AMAZING FOOD • FUN GAMES • CHEF SPECIALS • REGISTER NOW • LIVE MUSIC • AMAZING FOOD • FUN GAMES • CHEF SPECIALS • 
             </div>
@@ -152,40 +157,74 @@ const Marquee = () => {
 
 const Features = () => {
   const features = [
-    { title: "Culinary Stalls", icon: <ChefHat className="w-10 h-10" />, desc: "Fresh, hygienic & pure vegetarian delicacies by student chefs.", color: "bg-[#ff3333]" },
-    { title: "Business Stalls", icon: <Briefcase className="w-10 h-10" />, desc: "Innovative ideas & entrepreneurial initiatives on display.", color: "bg-[#007BFF]" },
-    { title: "Yuva Vibes", icon: <Music className="w-10 h-10" />, desc: "Celebrate with music, fun games, and the spirit of Pratistha.", color: "bg-[#FFD700]" },
+    {
+      title: "Culinary Stalls",
+      icon: <FontAwesomeIcon icon={faUtensils} className="text-black text-3xl" />,
+      desc: "Fresh, hygienic & pure vegetarian delicacies by student chefs.",
+      color: "bg-[#ff3333]",
+    },
+    {
+      title: "Business Stalls",
+      icon: <FontAwesomeIcon icon={faStore} className="text-black text-3xl" />,
+      desc: "Innovative ideas & entrepreneurial initiatives on display.",
+      color: "bg-[#007BFF]",
+    },
+    {
+      title: "Yuva Vibes",
+      icon: <FontAwesomeIcon icon={faMusic} className="text-black text-3xl" />,
+      desc: "Celebrate with music, fun games, and the spirit of Pratistha.",
+      color: "bg-[#FFD700]",
+    },
   ];
 
   return (
     <section id="event" className="py-20 bg-white">
-       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="text-center mb-16">
-               <h2 className="text-5xl font-black text-black mb-4" style={{ fontFamily: "'Bangers', cursive" }}>WHAT TO EXPECT?</h2>
-               <div className="h-2 w-32 bg-black mx-auto"></div>
-           </div>
-           
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-               {features.map((f, i) => (
-                   <Card key={i} className={`transform hover:-translate-y-2 transition-all duration-300 ${f.color} border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`}>
-                       <CardHeader>
-                           <div className="w-16 h-16 bg-white border-4 border-black rounded-full flex items-center justify-center mb-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                               {f.icon}
-                           </div>
-                           <CardTitle className="text-3xl text-white" style={{ textShadow: "2px 2px 0 #000" }}>{f.title}</CardTitle>
-                       </CardHeader>
-                       <CardContent>
-                           <p className="text-lg font-bold text-black bg-white/50 p-2 rounded border-2 border-black/20">
-                               {f.desc}
-                           </p>
-                       </CardContent>
-                   </Card>
-               ))}
-           </div>
-       </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2
+            className="text-5xl font-black text-black mb-4"
+            style={{ fontFamily: "'Bangers', cursive" }}
+          >
+            WHAT TO EXPECT?
+          </h2>
+          <div className="h-2 w-32 bg-black mx-auto"></div>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((f, i) => (
+            <Card
+              key={i}
+              className={`transform hover:-translate-y-2 transition-all duration-300 ${f.color} border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`}
+            >
+              <CardHeader>
+                <div className="w-16 h-16 bg-white border-4 border-black rounded-full flex items-center justify-center mb-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  {f.icon}
+                </div>
+
+                <CardTitle
+                  className="text-3xl text-white"
+                  style={{ textShadow: "2px 2px 0 #000" }}
+                >
+                  {f.title}
+                </CardTitle>
+              </CardHeader>
+
+              <CardContent>
+                <p className="text-lg font-bold text-black bg-white/60 p-3 rounded border-2 border-black/20">
+                  {f.desc}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+      </div>
     </section>
-  )
-}
+  );
+};
 
 
 
@@ -228,19 +267,19 @@ const Timeline = () => {
            <div className="absolute bottom-10 left-10 text-6xl font-black text-black/10 -rotate-12 pointer-events-none select-none hidden md:block" style={{ fontFamily: "'Bangers', cursive" }}>ZAP!</div>
 
            <div className="max-w-6xl mx-auto px-4">
-              <div className="text-center mb-16 relative z-10">
+              <div className="text-center mb-16 relative ">
                   <h2 className="text-5xl md:text-6xl font-black text-black mb-4 uppercase" style={{ fontFamily: "'Bangers', cursive" }}>
                       Event <span className="text-[#ff3333] inline-block transform -rotate-2">Timeline</span>
                   </h2>
                   <div className="h-2 w-32 bg-black mx-auto"></div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-14  relative ">
                   {events.map((e, i) => (
                       <div key={i} className={`relative group ${e.fullWidth ? 'md:col-span-2' : ''}`}>
                            {/* Badge */}
                            {e.badge && (
-                              <div className={`absolute -top-6 -right-4 z-20 ${e.badge === 'CLOSED' ? 'bg-[#ff3333] text-white' : 'bg-[#FFD700] text-black'} border-4 border-black px-4 py-1 transform rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-black text-sm`}>
+                              <div className={`absolute -top-6 -right-4 z-1 ${e.badge === 'CLOSED' ? 'bg-[#ff3333] text-white' : 'bg-[#FFD700] text-black'} border-4 border-black px-4 py-1 transform rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-black text-sm`}>
                                   {e.badge}
                               </div>
                            )}
@@ -267,7 +306,7 @@ const Timeline = () => {
                   ))}
               </div>
 
-              <div className="mt-16 text-center relative z-10 w-full flex justify-center">
+              <div className="mt-16 text-center relative w-full flex justify-center">
                   <Button onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd99b2QEWfRWLBgnomGPladGO6EfRgYiBoId5ETIU5STjDKMw/viewform?pli=1', '_blank')} className="text-lg md:text-xl px-6 py-6 md:px-10 md:py-8 w-full md:w-auto whitespace-normal h-auto leading-tight bg-white text-black font-black border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-gray-50 transition-all tracking-wide" style={{ fontFamily: "'Bangers', cursive" }}>
                       REGISTER YOUR STALL
                   </Button>
@@ -316,7 +355,7 @@ const Contact = () => {
 
     return (
         <section id="contact" className="py-20 bg-[#fceba7] relative">
-             <div className="max-w-4xl mx-auto px-4 relative z-10 w-full text-center">
+             <div className="max-w-4xl mx-auto px-4 relative  w-full text-center">
                  <Card className="bg-white border-4 border-black p-4 sm:p-12 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
                      <CardHeader>
                          <div className="w-20 h-20 bg-[#25D366] rounded-full border-4 border-black flex items-center justify-center mx-auto mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce">
